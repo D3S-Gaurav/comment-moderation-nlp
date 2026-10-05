@@ -12,9 +12,9 @@ All code and outputs are in [`comment_moderation_pipeline.ipynb`](comment_modera
 
 | Class | Share |
 |---|---|
-| 0 | ~56% |
-| 1 | ~8% |
-| 2 | ~33% |
+| 0 | 57.7% |
+| 1 | 8.0% |
+| 2 | 31.5% |
 | 3 (threat) | 2.8% |
 
 The dataset is not redistributed here. Put `train.csv` and `test.csv` next to the notebook to run it.
