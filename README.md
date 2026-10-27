@@ -4,7 +4,7 @@ Classifies user comments into four moderation categories, including a rare **thr
 
 **Result:** out-of-fold macro-F1 **0.836** on 198k labelled comments (5-fold stratified CV), threat-class F1 **0.65**.
 
-All code and outputs are in [`comment_moderation_pipeline.ipynb`](comment_moderation_pipeline.ipynb).
+All code and outputs are in [`comment_moderation_pipeline.ipynb`](comment_moderation_pipeline.ipynb). Text normalisation and the engineered features live in [`features.py`](features.py) so they can be unit-tested.
 
 ## Data
 
@@ -49,3 +49,12 @@ What moved the score: the TF-IDF + engineered-feature matrix took a linear model
 pip install -r requirements.txt
 jupyter notebook comment_moderation_pipeline.ipynb
 ```
+
+## Tests
+
+```bash
+pip install pytest
+python -m pytest tests
+```
+
+The tests use small hand-written comments, so they run without the dataset.
